@@ -1,0 +1,38 @@
+div.title_head {
+  margin-bottom: 50px;
+  text-align: center;
+  border-bottom: solid 1px #ccc;
+}
+.first_p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: brown;
+}
+.second_p {
+  font-style: italic;
+}
+
+.item {
+  border: dashed 1px aquamarine;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 200px;
+}
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+h2 {
+  font-size: 20px;
+}
+.last {
+  color: #ccc;
+  font-size: 16px;
+}

@@ -1,0 +1,189 @@
+.section.section--big {
+  background-color: #2e1b41cb;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.container--big {
+  padding: 0;
+}
+
+.svg_w.svg_w--text {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.svg_w__text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%) scale(1);
+  animation: colorChange 5s infinite, pulse 2s infinite;
+  font-size: 30px;
+}
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%) scale(1.1);
+  }
+}
+
+#main:hover + #glass {
+  animation: move 10s infinite linear;
+  offset-rotate: 0deg;
+  transform: translate(-40px, -232px);
+  offset-path: path(
+    "M45 230.08C-83.8292 226.583 122.027 330.629 55.5001 476L241.994 362.051C298.841 380.035 510.321 402.099 542 400.5C581.599 398.502 606 284.994 606 278C606 271.006 458.833 19.7641 445.633 3.27877C432.433 -13.2066 173.829 233.577 45 230.08Z"
+  );
+}
+
+#main:hover #head {
+  animation: head 10s infinite linear;
+  offset-rotate: 0deg;
+  transform: translate(-980px, -172px);
+  offset-path: path(
+    "M994 177.5C890.5 -18 796.5 479.5 586.5 326C590 297.833 251 303 315 204C372.832 114.542 184 -53 109 18.4999C-159.889 274.841 159 110 139 560.5C119 1011 717.5 444 854 359C990.5 274 1097.5 373 994 177.5Z"
+  );
+}
+
+@keyframes head {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes move {
+  25% {
+    fill: #fffb00;
+  }
+  50% {
+    fill: #00ff0d;
+  }
+  75% {
+    fill: #002fff;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+#main:hover .eyes {
+  animation: eyes 5s infinite linear;
+}
+@keyframes eyes {
+  25% {
+    fill: #fffb00;
+  }
+  50% {
+    fill: #00ff0d;
+  }
+  75% {
+    fill: #002fff;
+  }
+  100% {
+    fill: #ff00c8;
+  }
+}
+.section.section--big2 {
+  background-color: #2e1b41cb;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.container--big2 {
+  padding: 0;
+}
+
+.svg_w {
+  width: 100%;
+  height: 100%;
+}
+
+#main2:hover #glass2 {
+  animation: move2 10s infinite linear;
+  transform-box: fill-box;
+  offset-anchor: 50% 50%;
+  offset-rotate: 0deg;
+  offset-path: path(
+    "M1433.5 488.5C1628.5 746 1299.5 383 1042 529.5C1089.17 536.667 1306.4 726.4 1262 878C1206.5 1067.5 1176 947.5 577.5 835C-21 722.5 429.5 729.5 352.5 404.5C275.5 79.5 413.5 320.5 760 158C1106.5 -4.49998 856.5 143.5 1231.5 202.5C1606.5 261.5 1238.5 231 1433.5 488.5Z"
+  );
+}
+#main2:hover #head2 {
+  animation: head2 10s infinite linear;
+  offset-rotate: 0deg;
+  transform-box: fill-box;
+  offset-anchor: 50% 50%;
+  offset-path: path(
+    "M597.5 320.5C708.5 159.5 744 465 1029.5 544C1162 574 982.6 362.1 1001 320.5C1024 268.5 1017 265 1196 193.5C1375 122 1439 222.5 1665.5 415C1892 607.5 1692.5 474 1698 908.5C1703.5 1343 1660.5 999.5 1226 1083.5C791.5 1167.5 1071 1099.5 565 1094C59 1088.5 440 1081.5 277.5 922.5C115 763.5 392 763.5 481 524C570 284.5 486.5 481.5 597.5 320.5Z"
+  );
+}
+#main2:hover .eyes2 {
+  animation: eyes2 5s infinite linear;
+}
+
+@keyframes head2 {
+  0% {
+    offset-distance: 12%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    offset-distance: 14%;
+  }
+  25% {
+    fill: #fffb00;
+  }
+  50% {
+    fill: #00ff0d;
+  }
+  75% {
+    fill: #002fff;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes eyes2 {
+  25% {
+    fill: #fffb00;
+  }
+  50% {
+    fill: #00ff0d;
+  }
+  75% {
+    fill: #002fff;
+  }
+  100% {
+    fill: #ff00c8;
+  }
+}

@@ -1,0 +1,305 @@
+@import url(./base.css);
+/* ________________________________ */
+.section {
+  background-image: url(../image/pngegg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+
+  animation-name: back;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.container {
+  position: relative;
+}
+/* ________________________________ */
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+  color: #b119ff80;
+  font-weight: 700;
+  font-size: 45px;
+}
+.box_w {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 50dvh;
+  border: 2px solid;
+  box-shadow: 11px -6px 50px 0px #b119ff80;
+}
+/* ________________________________ */
+
+.spinner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(0, 255, 255, 0.5);
+  cursor: pointer;
+
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  animation-direction: reverse;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.spinner:hover {
+  box-shadow: 0px 0px 50px 30px #b119ff80;
+}
+.spin_t {
+  user-select: none;
+}
+/* ________________________________ */
+
+.cloud_w {
+  max-width: 200px;
+  min-height: 100px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  animation: cloud 20s linear infinite 2s;
+  animation-fill-mode: backwards;
+}
+.cloud {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: filter 0.3s ease-in-out;
+  filter: blur(3px);
+}
+.cloud:hover {
+  filter: drop-shadow(14px -8px 12px rgb(255, 255, 255));
+}
+.cloud_t {
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -45%);
+  color: rgb(0, 0, 0);
+}
+/* ______ */
+.earth {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+.earth_w {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  animation: earh 20s linear infinite;
+  transition: transform 0.6s ease-in-out;
+}
+
+.earth_w:hover {
+  transform: rotate(360deg);
+}
+
+.earth_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  pointer-events: none;
+}
+/* _____ */
+.rocket_w:hover {
+  animation-play-state: running;
+}
+.rocket_w {
+  position: absolute;
+  top: calc(100% - 150px);
+  left: calc(100% - 150px);
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  animation: rocket 10s linear infinite paused;
+  transform: rotate(-90deg) skew(14deg, 26deg);
+}
+.rocket {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.rocket:hover {
+  filter: drop-shadow(-20px 43px 7px rgb(255, 115, 0));
+}
+.rocket_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(300deg);
+  color: rgb(0, 204, 255);
+  pointer-events: none;
+}
+
+/* ------ */
+
+@keyframes rocket {
+  25% {
+    transform: skew(63deg, 292deg);
+    top: calc(30% - 150px);
+    left: calc(40% - 150px);
+  }
+  50% {
+    transform: skew(63deg, 292deg);
+    top: calc(50% - 150px);
+    left: calc(20% - 150px);
+    transform: rotate(120deg);
+  }
+
+  75% {
+    transform: skew(63deg, 292deg);
+    top: calc(80% - 150px);
+    left: calc(80% - 150px);
+    transform: rotate(105deg);
+  }
+}
+
+@keyframes earh {
+  0%,
+  100% {
+    scale: 1 1;
+    top: 0;
+    left: 0;
+  }
+  5% {
+    scale: 1.2 1.2;
+    top: 0;
+    left: 2dvw;
+  }
+  25% {
+    scale: 2.2 2.2;
+    top: -6dvh;
+  }
+  45% {
+    scale: 1.2 1.2;
+    top: 0;
+    left: calc(95dvw - 150px);
+  }
+  50% {
+    scale: 1 1;
+    top: 0;
+    left: calc(100dvw - 150px);
+  }
+  55% {
+    scale: 0.8 0.8;
+    top: 0;
+    left: calc(95dvw - 150px);
+  }
+  75% {
+    scale: 0.5 0.5;
+    top: 3dvh;
+  }
+  95% {
+    scale: 0.8 0.8;
+    top: 0;
+    left: 2dvw;
+  }
+}
+
+@keyframes back {
+  from {
+    background-color: rgb(0, 0, 0);
+  }
+  25% {
+    background-color: rgb(29, 0, 61);
+  }
+  50% {
+    background-color: rgb(8, 0, 83);
+  }
+  to {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    border-radius: 0%;
+    /* position */
+    top: 0;
+    left: 0;
+
+    /* rotation */
+    transform: rotate(0deg);
+  }
+  2.5%,
+  22.5% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 0%;
+    transform: rotate(90deg);
+    /* position */
+    top: calc(100% - 80px);
+    left: 0;
+    /* color */
+    background-color: rgba(174, 0, 255, 0.5);
+  }
+  27.5%,
+  47.5% {
+    border-radius: 50%;
+  }
+
+  50% {
+    border-radius: 0%;
+    transform: rotate(180deg);
+    /* position */
+    top: calc(100% - 80px);
+    left: calc(100% - 80px);
+    /* color */
+    background-color: rgba(255, 230, 0, 0.5);
+  }
+  52.5%,
+  67.5% {
+    border-radius: 50%;
+  }
+  75% {
+    border-radius: 0%;
+    transform: rotate(270deg);
+    /* position */
+    top: 0;
+    left: calc(100% - 80px);
+    /* color */
+    background-color: rgb(0, 255, 55, 0.5);
+  }
+  77.5%,
+  97.5% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 0%;
+    /* position */
+    top: 0;
+    left: 0;
+
+    /* rotation */
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cloud {
+  25%,
+  75% {
+    transform: translateY(120%);
+  }
+  50% {
+    left: calc(100% - 220px);
+    transform: translateY(0);
+  }
+}

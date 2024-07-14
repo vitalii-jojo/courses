@@ -1,0 +1,15 @@
+@import url(./base.css);
+@import url(./stpop_motion.css);
+@import url(./planet.css);
+@import url(./roket.css);
+@import url(./cow.css);
+@import url(./ukraine.css);
+
+h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(33, 33, 36, 0.178);
+  box-shadow: 0 0 150px rgba(112, 48, 250, 0.411);
+}

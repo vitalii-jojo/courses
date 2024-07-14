@@ -1,0 +1,35 @@
+.footer {
+  min-height: 81px;
+  width: 100%;
+  background-color: #cccccc;
+}
+.container_footer {
+  padding: 0 20px;
+  padding-top: 33px;
+  max-width: 1169px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_links {
+  display: flex;
+  column-gap: 33px;
+}
+.footer_nav a {
+  text-decoration: none;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+}
+.footer_text {
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+}

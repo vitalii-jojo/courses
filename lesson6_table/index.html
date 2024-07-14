@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table1</title>
+    <link rel="stylesheet" href="./Style/table.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="table_wrap">
+          <header class="header">
+            <div class="header_main">
+              <div class="header_sort">
+                <label class="entries">Show</label>
+                <select class="entries_select" name="entries" id="entries">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                <label class="entries">entries</label>
+              </div>
+              <div class="header_search">
+                <input class="search" type="search" placeholder="Search..." />
+              </div>
+            </div>
+            <div class="button_contain">
+            <a class="header_button" href="#"><span></span>Add Customer</a>
+          </div>
+          </header>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table--align">Tracking ID</th>
+                <th>Product</th>
+                <th>Customer</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Payment Mode</th>
+                <th>Status</th>
+                <th class="table--align">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table--align">#20462</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/1.png" alt="hat" /> Hat
+                  </div>
+                </td>
+                <td>Matt Dickerson</td>
+                <td>13/05/2022</td>
+                <td>$4.95</td>
+                <td>Tranfer Bank</td>
+                <td>
+                  <div class="table__status table__status--deliv">
+                    Delivered
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--purple"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--purple"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#18933</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/2.png" alt="hat" /> Laptop
+                  </div>
+                </td>
+                <td>Wiktoria</td>
+                <td>22/05/2022</td>
+                <td>$8.95</td>
+                <td>Cash on Delivery</td>
+                <td>
+                  <div class="table__status table__status--deliv">
+                    Delivered
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--white"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--white"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#45169</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/3.png" alt="hat" /> Phone
+                  </div>
+                </td>
+                <td>Trixie Byrd</td>
+                <td>15/06/2022</td>
+                <td>$1,149.95</td>
+                <td>Cash on Delivery</td>
+                <td>
+                  <div class="table__status table__status--process">
+                    Process
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--purple"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--purple"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#34304</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/4.png" alt="hat" /> Bag
+                  </div>
+                </td>
+                <td>Brad Mason</td>
+                <td>06/09/2022</td>
+                <td>$899.95</td>
+                <td>Tranfer Bank</td>
+                <td>
+                  <div class="table__status table__status--process">
+                    Process
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--white"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--white"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#17188</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/5.png" alt="Headset" /> Headset
+                  </div>
+                </td>
+                <td>Sanderson</td>
+                <td>25/09/2022</td>
+                <td>$22.95</td>
+                <td>Cash on Delivery</td>
+                <td>
+                  <div class="table__status table__status--cancel">
+                    Canceled
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--purple"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--purple"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#73003</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/6.png" alt="Mouse" /> Mouse
+                  </div>
+                </td>
+                <td>Jun Redfern</td>
+                <td>04/10/2022</td>
+                <td>$54.95</td>
+                <td>Tranfer Bank</td>
+                <td>
+                  <div class="table__status table__status--deliv">
+                    Delivered
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--white"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--white"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#58825</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/7.png" alt="Clock" /> Clock
+                  </div>
+                </td>
+                <td>Miriam Kidd</td>
+                <td>17/10/2022</td>
+                <td>$174.95</td>
+                <td>Tranfer Bank</td>
+                <td>
+                  <div class="table__status table__status--deliv">
+                    Delivered
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--purple"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--purple"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#44122</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/8.png" alt="T-shirt" /> T-shirt
+                  </div>
+                </td>
+                <td>Dominic</td>
+                <td>24/10/2022</td>
+                <td>$249.95</td>
+                <td>Cash on Delivery</td>
+                <td>
+                  <div class="table__status table__status--deliv">
+                    Delivered
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--white"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--white"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#89094</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/9.png" alt="Monitor" /> Monitor
+                  </div>
+                </td>
+                <td>Shanice</td>
+                <td>01/11/2022</td>
+                <td>$899.95</td>
+                <td>Tranfer Bank</td>
+                <td>
+                  <div class="table__status table__status--cancel">
+                    Canceled
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--purple"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--purple"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table--align">#85252</td>
+                <td>
+                  <div class="table_img">
+                    <img src="./img/10.png" alt="Keyboard" /> Keyboard
+                  </div>
+                </td>
+                <td>Poppy-Rose</td>
+                <td>22/11/2022</td>
+                <td>$6.948</td>
+                <td>Tranfer Bank</td>
+                <td>
+                  <div class="table__status table__status--process">
+                    Process
+                  </div>
+                </td>
+                <td class="table--align">
+                  <div class="table__action_list">
+                    <button
+                      class="table__action_edit table__action_list--white"
+                    ></button>
+                    <button
+                      class="table__action_remove table__action_list--white"
+                    ></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <footer class="footer">
+            <label class="footer__nav">Previous</label>
+            <a
+              href="https://lemon.velyhora.com.ua/052024/Afanasiev_Vitalii/lesson6_table/table.html"
+              class="footer__pages footer__pages--selected"
+              >1</a
+            >
+            <a href="https://lemon.velyhora.com.ua/052024/Afanasiev_Vitalii/lesson6_table/table2.html" class="footer__pages">2</a>
+            <a href="https://lemon.velyhora.com.ua/052024/Afanasiev_Vitalii/lesson6_table/table3.html" class="footer__pages">3</a>
+            <label class="footer__nav">Next</label>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

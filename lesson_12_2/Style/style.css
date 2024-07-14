@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+
+body,
+html {
+  height: 100%;
+}
+.wrapper {
+  display: grid;
+  min-height: 100%;
+  max-width: 100%;
+  grid-template: 112px 1fr / minmax(300px, 1308px);
+  justify-content: center;
+  background-color: #f9faef;
+}
+
+.section {
+  padding: 30px 0;
+  width: 100%;
+}
+
+.container {
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  align-self: center;
+}
+.container--head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  font-family: Newsreader;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+.links > a {
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  column-gap: 48px;
+  max-width: 556px;
+  align-items: center;
+}
+.basket_btn {
+  display: inline-block;
+  color: white !important;
+  background-color: #476730;
+  max-width: 151px;
+  height: 48px;
+  padding: 0 60px 0 24px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+}
+a span {
+  position: relative;
+}
+.shbag::after {
+  content: url(../img/shopping-bag.svg);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+/* _____ */
+.section {
+  display: grid;
+  grid-template: minmax(30px, 149px) repeat(3, minmax(166px, 2fr)) 1fr / 1fr minmax(
+      30px,
+      395px
+    );
+  /* grid-template-areas: 
+  section--title section--title section--title
+  item1 item1  container--order
+  item2 item2  container--order
+  item3 item3
+  ; */
+  gap: 16px 32px;
+}
+
+.container--title {
+  grid-column: span 2;
+  align-self: end;
+}
+.title {
+  font-family: Newsreader;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 76.8px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.title > span {
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.item,
+.order_w {
+  padding: 0 30px;
+  border: 2px solid #e1e4d9;
+  background-color: #edefe4;
+  border-radius: 24px;
+}
+.item1 {
+  grid-area: 2/1/2/2;
+}
+.item2 {
+  grid-area: 3/1/3/2;
+}
+.item3 {
+  grid-area: 4/1/4/2;
+}
+.item4 {
+  grid-area: 5/1/5/2;
+}
+
+.container--order {
+  grid-row: span 2;
+  padding: 0;
+}
+.order_w {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+  min-height: 320px;
+}

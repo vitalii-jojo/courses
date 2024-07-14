@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start template</title>
+    <link rel="stylesheet" href="./styles/style2.css" />
+  </head>
+  <body>
+    <div class="landing">
+      <button class="nav_btn"></button>
+      <div class="navbar">
+        <div class="navbar__icon">
+          <img src="./images/icon.png" class="icon__img" alt="icon" />
+        </div>
+        <div class="navbar__menu">
+          <a href="#" class="menu__button--active">Home</a>
+          <a href="#" class="menu__button">About</a>
+          <a href="#" class="menu__button">Projects</a>
+        </div>
+        <div class="navbar__button">
+          <a data-popup-button="popup-1" href="#" class="button__link"
+            >Resume</a
+          >
+        </div>
+      </div>
+      <div class="main">
+        <section class="main__section">
+          <p class="section__hi">Hello,</p>
+          <p class="section__iam">I am Charles.</p>
+          <p class="section__ui">UI/UX Designer</p>
+          <p class="section__big">
+            Hello, I am an aspiring UI/UX designer with the ability to translate
+            the designs into functional Front-end
+          </p>
+          <div class="section__hire">
+            <a data-popup-button="popup-2" class="hire__button" href="#"
+              >Hire Me</a
+            >
+          </div>
+        </section>
+        <section class="main__figure">
+          <img
+            class="figure__person"
+            src="./images/guy-stylish-hat-beige-jacket-smiles-shows-his-finger-camera-min-removebg-preview.png"
+            alt="Designer"
+          />
+          <div class="figure__ellipce"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- popups -->
+    <div data-popup id="popup-1" class="popup">
+      <div data-popup-window class="popup__in">
+        <div class="popup__close"></div>
+        <div class="icon">
+          <a 	target="_blank"
+            href="https://marketplace.atlassian.com/apps/1232489/calendar-for-confluence-pro?tab=overview&hosting=cloud"
+          >
+            <img src="./images/C4C.png" alt="c4c" />
+          </a>
+        </div>
+        <div class="text">
+          This is a paid extension for a free Calendar for Confluence app
+          allowing you to enhance Calendar by creating custom events
+        </div>
+      </div>
+    </div>
+    <div data-popup id="popup-2" class="popup">
+      <div data-popup-window class="popup__in">
+        <div class="popup__close"></div>
+        2aksldjgsldjglksdg wefwefewfwefwefe
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css); */
+
+body,
+html {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.section {
+  margin: 0 auto;
+  width: 100%;
+}
+.container {
+  padding: 0 30px;
+  width: 100%;
+}
+
+button {
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 20%;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+}
+input {
+  margin-bottom: 5px;
+}
+.out_1,
+.out_2,
+.out_3 {
+  padding: 5px 0;
+}
+h1 {
+  padding-bottom: 10px;
+}

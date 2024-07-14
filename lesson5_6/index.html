@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <div class="landing">
+      <div class="container">
+        <button class="menu_btn"></button>
+        <div class="nav">
+          <div class="landing_nav">
+            <a href="#">About Me</a>
+            <a href="#">Skills</a>
+            <a href="#">Project</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div class="main">
+          <div class="info">
+            <div class="info__text">
+              <span class="hi">Hi </span> <span class="emoji"></span>,
+              <p>I’m Charles,</p>
+              <p>Front-end Developer</p>
+            </div>
+            <div class="info__desc">
+              <p>
+                I design and develop experiences that make people’s lives
+                simpler through Web and Mobile apps.I work with FIgma , HTML5,
+                CSS3, JavaScript, React, ReactNative and Flutter.
+              </p>
+            </div>
+            <div class="buttons">
+              <a data-popup-button="popup-1" class="buttons__hire" href="#"
+                >HIRE ME</a
+              >
+              <a data-popup-button="popup-2" class="buttons__proj" href="#"
+                >SEE MY PROJECTS</a
+              >
+            </div>
+          </div>
+          <div class="imgages">
+            <img class="imgages_in" src="./img/me.png" alt="me" />
+          </div>
+        </div>
+      </div>
+      <!-- pop1 -->
+      <div data-popup id="popup-1" class="popup">
+        <div data-popup-window class="popup__in">
+          <div data-popup-close class="close__btn"></div>
+          First popup
+          <img
+            class="gif"
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjdpMWJhM3J1YjJqeXo5MDQ5MnBvYXE2d2h0c282b2M3MXFiaHc0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yoJC2GnSClbPOkV0eA/giphy.gif"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- pop2 -->
+      <div data-popup id="popup-2" class="popup">
+        <div data-popup-window class="popup__in">
+          <div data-popup-close class="close__btn"></div>
+          second popup
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./script/script.js"></script>
+  </body>
+</html>

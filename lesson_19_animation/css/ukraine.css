@@ -1,0 +1,67 @@
+.section--ukraine {
+  background-color: #112827;
+}
+
+.text_uk {
+  font-size: 30px;
+  color: #5e55e6;
+  text-align: center;
+  text-shadow: 0 0;
+}
+
+.text_uk.run {
+  animation: true 0.2s infinite ease-in-out;
+}
+
+@keyframes true {
+  25% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff4da6,
+      0 0 30px #ff4da6, 0 0 40px #ff4da6;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6,
+      0 0 30px #ff4da6, 0 0 40px #ff4da6;
+  }
+}
+
+.area {
+  fill: #9790ee;
+  stroke: white;
+  stroke-width: 0.679017;
+  position: relative;
+}
+
+.area:hover {
+  fill: #5e55e6;
+  stroke: white;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  stroke-width: 3;
+}
+.area.active {
+  fill: #1d1769;
+}
+.img {
+  display: none;
+  width: 300px;
+  pointer-events: none;
+}
+
+.img.kh {
+  transform: translate(73%, 36%);
+}
+
+.img.ki {
+  transform: translate(44%, 26%);
+}
+
+.img.lv {
+  transform: translate(11%, 34%);
+}
+.img.od {
+  transform: translate(46%, 70%);
+}
+
+.img.display {
+  display: inline;
+}
